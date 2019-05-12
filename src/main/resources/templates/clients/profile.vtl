@@ -1,7 +1,7 @@
 <h1>Welcome $activeClient.getUserName()</h1>
 <h3>$activeClient.getFullName()</h3>
 #if ($activeClient.getStylistId())
-  <p>Your stylist: $com.exemple.hair.model.Stylist.find($activeClient.getStylistId()).getFullName()</p>
+  <p>Your stylist: $Stylist.find($activeClient.getStylistId()).getFullName()</p>
 #else
   <p>Your stylist: None
 #end

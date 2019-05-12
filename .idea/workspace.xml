@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1d365773-7fba-4a14-84ec-5a016ae0d4c1" name="Default Changelist" comment="first commit">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exemple/hair/database/DB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exemple/hair/database/DB.java" afterDir="false" />
-    </list>
+    <list default="true" id="1d365773-7fba-4a14-84ec-5a016ae0d4c1" name="Default Changelist" comment="first commit" />
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -166,11 +164,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/exemple/hair/database/DB.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
               <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/clients/delete.vtl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="48" lean-forward="true" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -216,6 +223,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/exemple/hair/VelocityTemplateEngine.java" />
         <option value="$PROJECT_DIR$/src/main/resources/public/scripts.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/exemple/hair/database/DB.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/clients/delete.vtl" />
       </list>
     </option>
   </component>
@@ -397,16 +405,15 @@
       <updated>1557585029881</updated>
       <workItem from="1557585042267" duration="4501000" />
       <workItem from="1557592564609" duration="7471000" />
-      <workItem from="1557678752063" duration="1326000" />
+      <workItem from="1557678752063" duration="2008000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15817000" />
+    <option name="totallyTimeSpent" value="16499000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27231467" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -492,9 +499,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/layout.vtl">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/clients/delete.vtl">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.sparkjava/spark-core/2.3/99b3f92f15b266c30c5d43defdd4ed92f8dfe25e/spark-core-2.3-sources.jar!/spark/TemplateEngine.java">
@@ -589,6 +593,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/clients/delete.vtl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="48" lean-forward="true" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
         </state>
       </provider>
     </entry>

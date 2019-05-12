@@ -128,7 +128,7 @@ public class App {
         response.redirect("/");
       } else {
         model.put("clients", Client.withStylistId(activeStylist.getId()));
-        model.put("com.exemple.hair.model.Stylist", Stylist.class);
+        model.put("Stylist", Stylist.class);
       }
       model.put("template", "templates/stylists/profile.vtl");
       return new ModelAndView(model, layout);
