@@ -1,0 +1,16 @@
+<form action="/clients/edit" method="post">
+  <input id="clientId" name="clientId" value="$client.getId()" hidden>
+  <div class="form-group">
+    <label for="userName">User Name:</label>
+    <input id="userName" name="userName" class="form-control" type="text" value="$client.getUserName()" required>
+  </div>
+  <div class="form-group">
+    <label for="firstName">First Name:</label>
+    <input id="firstName" name="firstName" class="form-control" type="text" value="$client.getFirstName()" required>
+  </div>
+  <div class="form-group">
+    <label for="lastName">Last Name:</label>
+    <input id="lastName" name="lastName" class="form-control" type="text" value="$client.getLastName()" required>
+  </div>
+  <button class="btn btn-success" type="submit">Update account</button>
+</form>

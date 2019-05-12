@@ -1,0 +1,30 @@
+<div class="panel-body">
+  <table class="table table-striped sortable-table display">
+    <thead>
+      <th>Username</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Stylist</th>
+      <th>Profile</th>
+      <th>Edit</th>
+      <th>Delete</th>
+    </thead>
+    <tbody>
+      #foreach ($client in $clients)
+        <tr>
+          <td>$client.getUserName()</td>
+          <td>$client.getFirstName()</td>
+          <td>$client.getLastName()</td>
+          #if ($client.getStylistId())
+            <td>$Stylist.find($client.getStylistId()).getFullName()</td>
+          #else
+            <td>None</td>
+          #end
+          <td><a href="/clients/$client.getId()">View</a></td>
+          <td><a href="/clients/edit/$client.getId()">Edit</a></td>
+          <td><a href="/clients/delete/$client.getId()">Delete</a></td>
+        </tr>
+      #end
+    </tbody>
+  </table>
+</div>

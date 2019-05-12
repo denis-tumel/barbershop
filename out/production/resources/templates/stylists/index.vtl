@@ -1,0 +1,7 @@
+<h1>All stylists</h1>
+
+#if ($stylists.size() == 0)
+  <p>Sorry, we don't have any stylists</p>
+#else
+  #parse("/templates/tables/all-stylists.vtl")
+#end

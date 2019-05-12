@@ -1,0 +1,5 @@
+<h1>Create account</h1>
+#parse("/templates/forms/new-stylist.vtl")
+#if ($stylistexists)
+  <p>Sorry, that name is already in use.</p>
+#end

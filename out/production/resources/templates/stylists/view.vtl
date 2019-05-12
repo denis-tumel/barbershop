@@ -1,0 +1,7 @@
+<h1>com.exemple.hair.model.Stylist information</h1>
+
+#if (!$stylist)
+  <h3>Sorry, we couldn't find that stylist.</h3>
+#else
+  #parse("/templates/stylists/details.vtl")
+#end

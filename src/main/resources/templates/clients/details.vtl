@@ -1,0 +1,7 @@
+<h3>$client.getUserName()</h3>
+<p>Name: $client.getUserName()</p>
+#if ($client.getStylistId())
+  <p>com.exemple.hair.model.Stylist: $com.exemple.hair.model.Stylist.find($client.getStylistId()).getUserName() - $com.exemple.hair.model.Stylist.find($client.getStylistId()).getFullName()</p>
+#else
+  <p>com.exemple.hair.model.Stylist: None</p>
+#end

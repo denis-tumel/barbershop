@@ -1,0 +1,11 @@
+<form action="/stylists/search" method="get">
+  <div class="form-group">
+    <label for="s">Search:</label>
+    #if ($search)
+      <input id="s" name="s" class="form-control" type="text" value="$search" required>
+    #else
+      <input id="s" name="s" class="form-control" type="text" required>
+    #end
+  </div>
+  <button class="btn btn-info" type="submit">Search</button>
+</form>

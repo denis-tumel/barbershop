@@ -1,0 +1,9 @@
+<h1>Search clients</h1>
+
+#parse("/templates/forms/search-clients.vtl")
+
+#if ($clients.size() == 0)
+  <p class="text-center">No clients found.</p>
+#elseif ($clients)
+  #parse("/templates/tables/all-clients.vtl")
+#end

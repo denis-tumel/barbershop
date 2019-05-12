@@ -1,0 +1,9 @@
+<h1>Welcome $activeStylist.getUserName()</h1>
+<h3>$activeStylist.getFullName()</h3>
+
+<p>Your clients:</p>
+#if ($clients.size() == 0)
+  <p>You don't have any clients.</p>
+#else
+  #parse("/templates/tables/all-clients.vtl")
+#end

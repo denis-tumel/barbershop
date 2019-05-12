@@ -1,0 +1,23 @@
+<h3>$stylist.getUserName()</h3>
+<p>Name: $stylist.getFullName()</p>
+<p>Specialty: $stylist.getSpecialty()</p>
+
+
+<div class="panel-group">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">
+        <a data-toggle="collapse" href="#assign-client">View $stylist.getUserName()'s clients:</a>
+      </h3>
+    </div>
+    <div class="form panel-collapse collapse" id="assign-client">
+      <div class="panel-body">
+        #if ($clients.size() == 0)
+          <p>$stylist.getUserName() doesn't have any clients.</p>
+        #else
+          #parse("/templates/tables/all-clients.vtl")
+        #end
+      </div>
+    </div>
+  </div>
+</div>

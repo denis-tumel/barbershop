@@ -1,0 +1,9 @@
+<h1>Search stylists</h1>
+
+#parse("/templates/forms/search-stylists.vtl")
+
+#if ($stylists.size() == 0)
+  <p class="text-center">No stylists found.</p>
+#elseif ($stylists)
+  #parse("/templates/tables/all-stylists.vtl")
+#end

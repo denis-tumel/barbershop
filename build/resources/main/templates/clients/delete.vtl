@@ -1,0 +1,15 @@
+#if ($client)
+  <h1>Really delete $client.getUserName()?</h1>
+
+  #parse("/templates/clients/details.vtl")
+
+  <form action="/clients/delete" method="post">
+    <input id="clientId" name="clientId" type="text" value="$client.getId()" hidden>
+    <button class="btn btn-danger" type="submit">Delete</button>
+    <a href="javascript:history.back()"<button class="btn btn-success" type="button">Go back</button></a>
+  </form>
+#else
+  <h1>Delete client</h1>
+
+  <p>Sorry, we couldn't find that client.</p>
+#end

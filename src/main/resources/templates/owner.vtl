@@ -1,0 +1,83 @@
+#if ($clientexists)
+  <p>Sorry, that client name is already in use.</p>
+#end
+#if ($stylistexists)
+  <p>Sorry, that stylist name is already in use.</p>
+#end
+
+<div class="panel-group">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">
+        <a data-toggle="collapse" href="#new-stylist">Add new stylist</a>
+      </h3>
+    </div>
+    <div class="form panel-collapse collapse" id="new-stylist">
+      <div class="panel-body">
+        #parse("/templates/forms/new-stylist.vtl")
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="panel-group">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">
+        <a data-toggle="collapse" href="#new-client">Add new client</a>
+      </h3>
+    </div>
+    <div class="form panel-collapse collapse" id="new-client">
+      <div class="panel-body">
+        #parse("/templates/forms/new-client.vtl")
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="panel-group">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">
+        <a data-toggle="collapse" href="#assign-client">Assign stylist to client</a>
+      </h3>
+    </div>
+    <div class="form panel-collapse collapse" id="assign-client">
+      <div class="panel-body">
+        #parse("/templates/forms/assign-client.vtl")
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="panel-group">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">
+        <a data-toggle="collapse" href="#view-stylist">View all stylists</a>
+      </h3>
+    </div>
+    <div class="form panel-collapse collapse" id="view-stylist">
+      <div class="panel-body">
+        #parse("/templates/tables/all-stylists.vtl")
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="panel-group">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">
+        <a data-toggle="collapse" href="#view-client">View all clients</a>
+      </h3>
+    </div>
+    <div class="form panel-collapse collapse" id="view-client">
+      <div class="panel-body">
+        #parse("/templates/tables/all-clients.vtl")
+      </div>
+    </div>
+  </div>
+</div>
