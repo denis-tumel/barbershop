@@ -11,6 +11,7 @@ public class Client {
   private String firstName;
   private String lastName;
   private Integer stylistId;
+  private Integer s;
 
   public Client(String userName, String firstName, String lastName) {
     this.userName = userName;
