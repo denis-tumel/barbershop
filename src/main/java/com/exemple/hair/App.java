@@ -22,6 +22,7 @@ public class App {
 
     before((request, response) -> {
       model.clear();
+
       if(activeClient != null) {
         model.put("activeClient", activeClient);
       }
