@@ -11,16 +11,10 @@ import org.apache.velocity.app.VelocityEngine;
 import spark.ModelAndView;
 import spark.TemplateEngine;
 
-/**
- * Template Engine based on Apache Velocity.
- */
 public class VelocityTemplateEngine extends TemplateEngine {
 
     private final VelocityEngine velocityEngine;
 
-    /**
-     * Constructor
-     */
     public VelocityTemplateEngine() {
         Properties properties = new Properties();
         properties.setProperty("resource.loader", "class");
@@ -30,11 +24,6 @@ public class VelocityTemplateEngine extends TemplateEngine {
         velocityEngine = new VelocityEngine(properties);
     }
 
-    /**
-     * Constructor
-     *
-     * @param velocityEngine The velocity engine, must not be null.
-     */
     public VelocityTemplateEngine(VelocityEngine velocityEngine) {
         if (velocityEngine == null) {
             throw new IllegalArgumentException("velocityEngine must not be null");
@@ -42,9 +31,6 @@ public class VelocityTemplateEngine extends TemplateEngine {
         this.velocityEngine = velocityEngine;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public String render(ModelAndView modelAndView) {
         Template template = velocityEngine.getTemplate(modelAndView.getViewName());
