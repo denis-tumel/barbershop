@@ -139,7 +139,7 @@ public class App {
       if(stylist != null) {
         model.put("stylist", stylist);
         model.put("clients", Client.withStylistId(stylist.getId()));
-        model.put("com.exemple.hair.model.Stylist", Stylist.class);
+        model.put("Stylist", Stylist.class);
       }
       model.put("template", "templates/stylists/view.vtl");
       return new ModelAndView(model, layout);
@@ -243,7 +243,7 @@ public class App {
       if(client != null) {
         model.put("client", client);
       }
-      model.put("com.exemple.hair.model.Stylist", Stylist.class);
+      model.put("Stylist", Stylist.class);
       model.put("template", "templates/clients/delete.vtl");
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
