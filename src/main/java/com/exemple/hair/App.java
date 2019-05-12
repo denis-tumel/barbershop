@@ -276,7 +276,7 @@ public class App {
       if (activeClient == null) {
         response.redirect("/");
       }
-      model.put("com.exemple.hair.model.Stylist", Stylist.class);
+      model.put("Stylist", Stylist.class);
       model.put("template", "templates/clients/profile.vtl");
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
