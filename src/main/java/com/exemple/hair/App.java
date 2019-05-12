@@ -286,7 +286,7 @@ public class App {
       if(client != null) {
         model.put("client", client);
       }
-      model.put("com.exemple.hair.model.Stylist", Stylist.class);
+      model.put("Stylist", Stylist.class);
       model.put("template", "templates/clients/view.vtl");
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
@@ -348,7 +348,7 @@ public class App {
       activeStylist = null;
       model.remove("activeClient");
       model.remove("activeStylist");
-      model.put("com.exemple.hair.model.Stylist", Stylist.class);
+      model.put("Stylist", Stylist.class);
       model.put("clients", Client.all());
       model.put("stylists", Stylist.all());
       model.put("template", "templates/owner.vtl");
